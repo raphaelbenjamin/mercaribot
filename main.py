@@ -7,11 +7,9 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 WEBPAGE_URLS = [
-    'https://www.mercari.com/search/?keyword=MacBook%20m2&maxPrice=150000&minPrice=30000&sortBy=2', 
-    'https://www.mercari.com/search/?itemStatuses=1&keyword=iphone%2014&maxPrice=78000&minPrice=45000&sortBy=2', 
-    'https://www.mercari.com/search/?keyword=iphone%2013&maxPrice=70000&minPrice=40000&sortBy=2', 
-    'https://www.mercari.com/search/?keyword=iPhone%2014%20pro&maxPrice=72000&minPrice=45000&sortBy=2'
-]  # Replace with your URLs
+    'https://www.mercari.com/search/?keyword=iphone&sortBy=2'
+]
+  # Replace with your URLs
 DISCORD_WEBHOOK_URL = os.getenv('DISCORD_WEBHOOK_URL')  # Replace with your Discord Webhook URL
 
 def notify_discord(message, url):
